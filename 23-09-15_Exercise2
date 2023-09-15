@@ -1,0 +1,10 @@
+def main():
+    V_membrane = -75 ## Initialize neuron membrane potential in units millivolts
+    V_membrane = V_membrane * 0.7 ## Compute the value of the variable multiplying it by 0.7
+    V_membrane = 1.0
+    print(V_membrane)
+    
+if __name__ == "__main__":
+    main() #call the main function
+
+    The type of the variable is still the same : float variable.
