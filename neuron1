@@ -1,0 +1,20 @@
+def main():
+    V_membrane = float(-75)  # Initialize neuron membrane potential in units millivolts
+    spike_value = float(input())
+    print('value of the input spike that is received =', spike_value, 'mv')
+    
+    spike_value = float(spike_value)
+    print(spike_value)
+
+    V_membrane = V_membrane + spike_value # Use the spike value to update the membrane potential
+
+    # Check if the membrane potential reaches -65mV
+    if (V_membrane >= -65):
+        # Emit a spike of 5mV
+        print(5)
+    else:
+        # Emit output 0 representing no output
+        print(0)
+
+if __name__ == "__main__":
+    main()
