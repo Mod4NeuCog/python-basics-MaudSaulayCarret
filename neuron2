@@ -1,0 +1,16 @@
+import sys #Allow `sys.argv` to work
+
+def main(): #Gather our code in a main() function
+    V_membrane = float (-75)
+    spike = sys.argv[1]
+    spike_value = int(spike) #Convert the input to float
+    V_membrane = V_membrane + spike_value #Update neuron membrane potential
+    
+    #If neurone membrane 
+    if(V_membrane >= -65):
+        print(5) #Emit output spike of 5mv
+    else:
+        print(0) #Emit output 0 representing no output
+        
+if __name__ == "__main__":
+    main()
