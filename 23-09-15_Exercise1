@@ -1,0 +1,7 @@
+def main():
+    V_membrane = float(-75) ## Initialize neuron membrane potential in units millivolts
+    V_membrane = V_membrane + 1 ## Compute only one change of membrane potential value
+    print(V_membrane)
+    
+if __name__ == "__main__":
+    main() #call the main function
