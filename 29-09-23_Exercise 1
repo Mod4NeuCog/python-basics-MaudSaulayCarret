@@ -1,0 +1,19 @@
+Inputs: spike + weight
+Outputs: update membrane potential
+
+membrane_potential <- x
+
+Function UpdateMembranePotential1:
+    input = spike
+    membrane_potential <- membrane_potential + spike
+    
+Function UpdateMembranePotential2:
+    input = weight
+    membrane_potential <- membrane_potential + weight
+
+Function Simulate:
+    inputs: UpdateMembranePotential1 and UpdateMembranePotential2
+    membrane_potential <- UpdateMembranePotential1 + UpdateMembranePotential2
+
+Main(argu):
+    print(membrane_potential)
